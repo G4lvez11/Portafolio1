@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* Modo Claro */
+  --bg-primary: 249 250 251;
+  --bg-secondary: 255 255 255;
+  --bg-tertiary: 243 244 246;
+  --text-primary: 17 24 39;
+  --text-secondary: 75 85 99;
+  --border-color: 229 231 235;
+}
+
+.dark {
+  /* Modo Oscuro */
+  --bg-primary: 17 24 39;
+  --bg-secondary: 31 41 55;
+  --bg-tertiary: 55 65 81;
+  --text-primary: 255 255 255;
+  --text-secondary: 209 213 219;
+  --border-color: 55 65 81;
+}
+
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
